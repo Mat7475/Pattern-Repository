@@ -1,9 +1,12 @@
 using System;
 
-public class VueVehicule : ComposantGraphiqueVehicule
+namespace Patter.Structural.Decorateur
 {
-  public void affiche()
-  {
-    Console.WriteLine("Affichage du véhicule");
-  }
+    public class VueVehicule : ComposantGraphiqueVehicule
+    {
+        public void Affiche()
+        {
+            Console.WriteLine("Affichage du véhicule de base");
+        }
+    }
 }

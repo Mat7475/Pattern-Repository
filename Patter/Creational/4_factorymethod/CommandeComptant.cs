@@ -1,18 +1,23 @@
-using System;
+﻿using System;
 
-public class CommandeComptant : Commande
+namespace Patter.Creational.FactoryMethod
 {
-  public CommandeComptant(double montant) : base(montant){}
+    public class CommandeComptant : Commande
+    {
+        public CommandeComptant(double montant) : base(montant)
+        {
+        }
 
-  public override void paye()
-  {
-    Console.WriteLine(
-      "Le paiement de la commande au comptant de : " +
-      montant + " est effectu�.");
-  }
+        public override bool Valide()
+        {
+            Console.WriteLine($"Validation commande comptant de {montant}€");
+            Console.WriteLine("  ✓ Commande valide (paiement comptant)");
+            return true;
+        }
 
-  public override bool valide()
-  {
-    return true;
-  }
+        public override void Paye()
+        {
+            Console.WriteLine($"Paiement comptant de {montant}€ effectué");
+        }
+    }
 }

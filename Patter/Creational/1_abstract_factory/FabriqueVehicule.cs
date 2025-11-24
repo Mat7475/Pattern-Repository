@@ -1,10 +1,10 @@
 using System;
 
-public interface FabriqueVehicule
+namespace Patter.Creational.AbstractFactory
 {
-  Automobile creeAutomobile(string modele, string couleur,
-    int puissance, double espace);
-
-  Scooter creeScooter(string modele, string couleur, int
-    puissance);
+    public interface FabriqueVehicule
+    {
+        Automobile CreeAutomobile(string modele, string couleur, int puissance, double espace);
+        Scooter CreeScooter(string modele, string couleur, int puissance);
+    }
 }

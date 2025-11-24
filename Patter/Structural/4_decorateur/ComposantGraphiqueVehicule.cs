@@ -1,4 +1,7 @@
-public interface ComposantGraphiqueVehicule
+namespace Patter.Structural.Decorateur
 {
-  void affiche();
+    public interface ComposantGraphiqueVehicule
+    {
+        void Affiche();
+    }
 }

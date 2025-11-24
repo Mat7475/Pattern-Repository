@@ -1,15 +1,17 @@
 using System;
 
-public abstract class Commande
+namespace Patter.Creational.FactoryMethod
 {
-  protected double montant;
+    public abstract class Commande
+    {
+        protected double montant;
 
-  public Commande(double montant)
-  {
-    this.montant = montant;
-  }
+        public Commande(double montant)
+        {
+            this.montant = montant;
+        }
 
-  public abstract bool valide();
-
-  public abstract void paye();
+        public abstract bool Valide();
+        public abstract void Paye();
+    }
 }

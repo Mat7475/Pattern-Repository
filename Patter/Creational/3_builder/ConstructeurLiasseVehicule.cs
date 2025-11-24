@@ -1,17 +1,17 @@
 using System;
 
-public abstract class ConstructeurLiasseVehicule
+namespace Patter.Creational.Builder
 {
-  protected Liasse liasse;
+    public abstract class ConstructeurLiasseVehicule
+    {
+        protected Liasse liasse;
 
-  public abstract void construitBonDeCommande(string
-    nomClient);
+        public abstract void ConstruitBonDeCommande(string nomClient);
+        public abstract void ConstruitDemandeImmatriculation(string nomDemandeur);
 
-  public abstract void construitDemandeImmatriculation
-    (string nomDemandeur);
-
-  public Liasse resultat()
-  {
-    return liasse;
-  }
+        public Liasse Resultat()
+        {
+            return liasse;
+        }
+    }
 }

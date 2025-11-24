@@ -1,20 +1,22 @@
 using System;
 
-public class Vendeur
+namespace Patter.Creational.Builder
 {
-  protected ConstructeurLiasseVehicule constructeur;
+    public class Vendeur
+    {
+        protected ConstructeurLiasseVehicule constructeur;
 
-  public Vendeur(ConstructeurLiasseVehicule constructeur)
-  {
-    this.constructeur = constructeur;
-  }
+        public Vendeur(ConstructeurLiasseVehicule constructeur)
+        {
+            this.constructeur = constructeur;
+        }
 
-  public Liasse construit(string nomClient)
-  {
-    constructeur.construitBonDeCommande(nomClient);
-    constructeur.construitDemandeImmatriculation
-      (nomClient);
-    Liasse liasse = constructeur.resultat();
-    return liasse;
-  }
+        public Liasse Construit(string nomClient)
+        {
+            constructeur.ConstruitBonDeCommande(nomClient);
+            constructeur.ConstruitDemandeImmatriculation(nomClient);
+            Liasse liasse = constructeur.Resultat();
+            return liasse;
+        }
+    }
 }

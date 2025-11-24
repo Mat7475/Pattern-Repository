@@ -1,17 +1,20 @@
 using System;
 
-public class LiassePdf : Liasse
+namespace Patter.Creational.Builder
 {
-  public override void ajouteDocument(string document)
-  {
-    if (document.StartsWith("<PDF>"))
-      contenu.Add(document);
-  }
+    public class LiassePdf : Liasse
+    {
+        public override void AjouteDocument(string document)
+        {
+            if (document.StartsWith("<PDF>"))
+                contenu.Add(document);
+        }
 
-  public override void imprime()
-  {
-    Console.WriteLine("Liasse PDF");
-    foreach (string s in contenu)
-      Console.WriteLine(s);
-  }
+        public override void Imprime()
+        {
+            Console.WriteLine("Liasse PDF");
+            foreach (string s in contenu)
+                Console.WriteLine(s);
+        }
+    }
 }

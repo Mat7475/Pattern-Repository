@@ -1,18 +1,23 @@
 using System;
 
-public class MarqueDecorateur : Decorateur
+namespace Patter.Structural.Decorateur
 {
-  public MarqueDecorateur(ComposantGraphiqueVehicule
-    composant) : base(composant){}
+    public class MarqueDecorateur : Decorateur
+    {
+        public MarqueDecorateur(ComposantGraphiqueVehicule composant)
+          : base(composant)
+        {
+        }
 
-  protected void afficheLogo()
-  {
-    Console.WriteLine("Logo de la marque");
-  }
+        protected void AfficheLogo()
+        {
+            Console.WriteLine("Logo de la marque");
+        }
 
-  public override void affiche()
-  {
-    base.affiche();
-    this.afficheLogo();
-  }
+        public override void Affiche()
+        {
+            base.Affiche();
+            this.AfficheLogo();
+        }
+    }
 }

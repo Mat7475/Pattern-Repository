@@ -1,18 +1,17 @@
 using System;
 
-public class FabriqueVehiculeElectricite : FabriqueVehicule
+namespace Patter.Creational.AbstractFactory
 {
-  public Automobile creeAutomobile(string modele, string
-    couleur, int puissance, double espace)
-  {
-    return new AutomobileElectricite(modele, couleur,
-      puissance, espace);
-  }
+    public class FabriqueVehiculeElectricite : FabriqueVehicule
+    {
+        public Automobile CreeAutomobile(string modele, string couleur, int puissance, double espace)
+        {
+            return new AutomobileElectricite(modele, couleur, puissance, espace);
+        }
 
-  public Scooter creeScooter(string modele, string
-    couleur, int puissance)
-  {
-    return new ScooterElectricite(modele, couleur,
-      puissance);
-  }
+        public Scooter CreeScooter(string modele, string couleur, int puissance)
+        {
+            return new ScooterElectricite(modele, couleur, puissance);
+        }
+    }
 }

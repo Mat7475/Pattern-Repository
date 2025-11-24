@@ -1,19 +1,21 @@
 using System.Collections.Generic;
 
-public abstract class Client
+namespace Patter.Creational.FactoryMethod
 {
-  protected IList<Commande> commandes = 
-      new List<Commande>();
-
-  protected abstract Commande creeCommande(double montant);
-
-  public void nouvelleCommande(double montant)
-  {
-    Commande commande = this.creeCommande(montant);
-    if (commande.valide())
+    public abstract class Client
     {
-      commande.paye();
-      commandes.Add(commande);
+        protected IList<Commande> commandes = new List<Commande>();
+
+        protected abstract Commande CreeCommande(double montant);
+
+        public void NouvelleCommande(double montant)
+        {
+            Commande commande = this.CreeCommande(montant);
+            if (commande.Valide())
+            {
+                commande.Paye();
+                commandes.Add(commande);
+            }
+        }
     }
-  }
 }

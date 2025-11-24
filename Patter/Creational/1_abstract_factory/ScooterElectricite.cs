@@ -1,15 +1,20 @@
 using System;
 
-public class ScooterElectricite : Scooter
+namespace Patter.Creational.AbstractFactory
 {
-  public ScooterElectricite(string modele, string couleur,
-    int puissance) : base(modele, couleur, puissance){}
+    public class ScooterElectricite : Scooter
+    {
+        public ScooterElectricite(string modele, string couleur, int puissance)
+          : base(modele, couleur, puissance)
+        {
+        }
 
-  public override void afficheCaracteristiques()
-  {
-    Console.WriteLine("Scooter électrique de modèle : " +
-      modele + " de couleur : " + couleur + 
-      " de puissance : " + puissance);
-  }
-
+        public override void AfficheCaracteristiques()
+        {
+            Console.WriteLine("Scooter Électrique");
+            Console.WriteLine($"  Modèle: {modele}");
+            Console.WriteLine($"  Couleur: {couleur}");
+            Console.WriteLine($"  Puissance: {puissance} W");
+        }
+    }
 }

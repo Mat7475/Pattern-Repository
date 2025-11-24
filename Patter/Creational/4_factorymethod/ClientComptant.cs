@@ -1,7 +1,10 @@
-public class ClientComptant : Client
+namespace Patter.Creational.FactoryMethod
 {
-  protected override Commande creeCommande(double montant)
-  {
-    return new CommandeComptant(montant);
-  }
+    public class ClientComptant : Client
+    {
+        protected override Commande CreeCommande(double montant)
+        {
+            return new CommandeComptant(montant);
+        }
+    }
 }

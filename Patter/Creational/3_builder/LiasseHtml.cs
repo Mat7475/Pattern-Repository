@@ -1,17 +1,20 @@
 using System;
 
-public class LiasseHtml : Liasse
+namespace Patter.Creational.Builder
 {
-  public override void ajouteDocument(string document)
-  {
-    if (document.StartsWith("<HTML>"))
-      contenu.Add(document);
-  }
+    public class LiasseHtml : Liasse
+    {
+        public override void AjouteDocument(string document)
+        {
+            if (document.StartsWith("<HTML>"))
+                contenu.Add(document);
+        }
 
-  public override void imprime()
-  {
-    Console.WriteLine("Liasse HTML");
-    foreach (string s in contenu)
-      Console.WriteLine(s);
-  }
+        public override void Imprime()
+        {
+            Console.WriteLine("Liasse HTML");
+            foreach (string s in contenu)
+                Console.WriteLine(s);
+        }
+    }
 }

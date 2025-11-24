@@ -1,18 +1,23 @@
 using System;
 
-public class ModeleDecorateur : Decorateur
+namespace Patter.Structural.Decorateur
 {
-  public ModeleDecorateur(ComposantGraphiqueVehicule
-    composant) : base(composant){}
+    public class ModeleDecorateur : Decorateur
+    {
+        public ModeleDecorateur(ComposantGraphiqueVehicule composant)
+          : base(composant)
+        {
+        }
 
-  protected void afficheInfosTechniques()
-  {
-    Console.WriteLine("Informations techniques du modèle");
-  }
+        protected void AfficheModele()
+        {
+            Console.WriteLine("Modèle: Sport GT 2024");
+        }
 
-  public override void affiche()
-  {
-    base.affiche();
-    this.afficheInfosTechniques();
-  }
+        public override void Affiche()
+        {
+            base.Affiche();
+            this.AfficheModele();
+        }
+    }
 }
