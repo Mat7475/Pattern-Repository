@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36705.20 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern", "Patter\Pattern.csproj", "{2CFD979D-8A19-4447-9BA6-CA9648708A78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patter", "Patter\Patter.csproj", "{2CFD979D-8A19-4447-9BA6-CA9648708A78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
