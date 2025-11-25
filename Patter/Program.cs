@@ -32,10 +32,10 @@ namespace Patter
                         Creational.Prototype.Program_Prototype.Execute();
                         break;
                     case "6":
-                        Console.WriteLine("Pattern Adapter - Voir le fichier code.cs complet");
+                        Structural.Adapter.Program_Adapter.Execute();
                         break;
                     case "7":
-                        Console.WriteLine("Pattern Bridge - Voir le fichier code.cs complet");
+                        Structural.Bridge.Program_Bridge.Execute();
                         break;
                     case "8":
                         Structural.Composite.Program_Composite.Execute();

@@ -1,4 +1,4 @@
-﻿using Pattern.Structural.Bridge;
+﻿using Patter.Structural.Bridge;
 using System;
 using System.Collections.Generic;
 using System.Linq;
